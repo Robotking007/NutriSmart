@@ -104,31 +104,27 @@ public class Main {
     
     private static void displaySampleData() {
         System.out.println("\n=== Sample User Data ===");
-        System.out.println("\n===== USER DETAILS =====");
-        System.out.println("Username: truptishinde");
-        System.out.println("Age: 19");
-        System.out.println("Weight: 50 kg");
-        System.out.println("Height: 160 cm");
-        System.out.println("Gender: Female");
-        System.out.println("Daily Calorie Goal: 1588.02");
-        System.out.println("Current Day: 1");
-        System.out.println("Total Meals Logged: 1");
-        System.out.println("\n===== DAILY SUMMARY =====");
-        System.out.println("Day-1: 59.0 calories (1 meals)");
+        printResourceFile("resources/truptishinde_details.txt");
+        printResourceFile("resources/samrudhhishinde_details.txt");
         
-        System.out.println("\n===== USER DETAILS =====");
-        System.out.println("Username: samrudhhishinde");
-        System.out.println("Age: 19");
-        System.out.println("Weight: 60 kg");
-        System.out.println("Height: 160 cm");
-        System.out.println("Gender: Female");
-        System.out.println("Daily Calorie Goal: 1946.76");
-        System.out.println("Current Day: 3");
-        System.out.println("Total Meals Logged: 4");
-        System.out.println("\n===== DAILY SUMMARY =====");
-        System.out.println("Day-1: 323.5 calories (3 meals)");
-        System.out.println("Day-2: 197.7 calories (1 meals)");
-        System.out.println("Day-3: 0.0 calories (0 meals)");
+        System.out.println("\n=== Summary Table (samrudhhishinde) ===");
+        printResourceFile("resources/samrudhhishinde_summary.csv");
+    }
+    
+    private static void printResourceFile(String path) {
+        java.io.File file = new java.io.File(path);
+        if (!file.exists()) {
+            System.out.println("File not found: " + path);
+            return;
+        }
+        try (java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (java.io.IOException e) {
+            System.out.println("Error reading file: " + e.getMessage());
+        }
     }
     
     private static int getIntInput() {
