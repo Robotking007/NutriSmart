@@ -11,21 +11,6 @@ public class GoalTracker {
                   (5 * user.getHeight()) - (6.8f * user.getAge());
         } else {
             bmr = 655 + (9.6f * user.getWeight()) + 
-                  (1.8f * user
-cat > src/main/java/com/nutrismart/controllers/GoalTracker.java << 'EOF'
-package com.nutrismart.controllers;
-
-import com.nutrismart.models.*;
-
-public class GoalTracker {
-    
-    public void calculateAndSetGoal(User user) {
-        float bmr;
-        if (user.getGender().equalsIgnoreCase("Male")) {
-            bmr = 66 + (13.7f * user.getWeight()) + 
-                  (5 * user.getHeight()) - (6.8f * user.getAge());
-        } else {
-            bmr = 655 + (9.6f * user.getWeight()) + 
                   (1.8f * user.getHeight()) - (4.7f * user.getAge());
         }
         
