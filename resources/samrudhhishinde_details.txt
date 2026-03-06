@@ -1,0 +1,14 @@
+===== USER DETAILS =====
+Username: samrudhhishinde
+Age: 19
+Weight: 60.0 kg
+Height: 160.0 cm
+Gender: Female
+Daily Calorie Goal: 1946.76
+Current Day: 3
+Total Meals Logged: 4
+
+===== DAILY SUMMARY =====
+Day-1: 323.5 calories (3 meals)
+Day-2: 197.7 calories (1 meals)
+Day-3: 0.0 calories (0 meals)

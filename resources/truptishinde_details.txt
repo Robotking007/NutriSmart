@@ -1,0 +1,12 @@
+===== USER DETAILS =====
+Username: truptishinde
+Age: 19
+Weight: 50.0 kg
+Height: 160.0 cm
+Gender: Female
+Daily Calorie Goal: 1588.02
+Current Day: 1
+Total Meals Logged: 1
+
+===== DAILY SUMMARY =====
+Day-1: 59.0 calories (1 meals)
